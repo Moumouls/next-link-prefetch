@@ -1,12 +1,15 @@
 import { Button, Grid } from "@mui/material";
 import Link from "next/link";
+import * as Icons from "@mui/icons-material";
 
 export const LinkButtons = () => {
   return (
     <Grid container spacing={2}>
       <Grid item>
         <Link href={{ pathname: "/" }} passHref shallow>
-          <Button variant="contained">Go to home</Button>
+          <Button variant="contained" startIcon={<Icons.Home />}>
+            Go to home
+          </Button>
         </Link>
       </Grid>
       <Grid item>

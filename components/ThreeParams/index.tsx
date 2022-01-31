@@ -1,6 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import { useRouter } from "next/router";
 import { LinkButtons } from "../LinkButtons";
+import largeJSON from "../large.json";
 
 export const ThreeParams = () => {
   const Router = useRouter();
@@ -21,6 +22,9 @@ export const ThreeParams = () => {
       </Grid>
       <Grid item xs={12}>
         <LinkButtons />
+      </Grid>
+      <Grid item xs={12}>
+        <Typography variant="body2">{JSON.stringify(largeJSON)}</Typography>
       </Grid>
     </Grid>
   );

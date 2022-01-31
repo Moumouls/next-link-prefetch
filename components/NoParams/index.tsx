@@ -1,5 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 import { LinkButtons } from "../LinkButtons";
+import largeJSON from "../large.json";
 
 export const NoParams = () => {
   return (
@@ -9,6 +10,9 @@ export const NoParams = () => {
       </Grid>
       <Grid item xs={12}>
         <LinkButtons />
+      </Grid>
+      <Grid item xs={12}>
+        <Typography variant="body2">{JSON.stringify(largeJSON)}</Typography>
       </Grid>
     </Grid>
   );
