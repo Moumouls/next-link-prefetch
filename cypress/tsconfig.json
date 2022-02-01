@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"strict": false,
+		"target": "es5",
+		"baseUrl": ".",
+		"esModuleInterop": true,
+		"lib": ["es5", "dom", "es2015"],
+		"types": ["cypress", "node"],
+		"jsx": "preserve"
+	},
+	"include": ["**/*.ts"]
+}

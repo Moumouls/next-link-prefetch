@@ -14,7 +14,9 @@ export const LinkButtons = () => {
       </Grid>
       <Grid item>
         <Link href={{ pathname: "/noParams" }} passHref shallow>
-          <Button variant="contained">Go to no params page</Button>
+          <Button className="NoParamsButton" variant="contained">
+            Go to no params page
+          </Button>
         </Link>
       </Grid>
       <Grid item>
