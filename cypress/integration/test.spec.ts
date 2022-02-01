@@ -1,5 +1,5 @@
-describe("test to reproduce full reload", () => {
-  it("displays two todo items by default", () => {
+describe("Full reload", () => {
+  it("test to reproduce full reload", () => {
     // Simulate slow network
     cy.intercept({ method: "GET" }, (req) => {
       req.continue((res) => {
